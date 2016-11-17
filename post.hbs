@@ -96,6 +96,17 @@
         </footer>
 
     </article>
+
+    {{!-- Tag list --}}
+    <div class="post">
+      <h4>Tags</h4>
+      {{#get "tags" limit="all"}}
+          {{#foreach tags}}
+              <a href="{{url}}"><span class="tag">{{name}}</span></a>
+          {{/foreach}}
+      {{/get}}
+    </div>
+
 </main>
 
 {{!-- Links to Previous/Next posts --}}

@@ -23,3 +23,13 @@
 
 {{!-- Previous/next page links - displayed on every page --}}
 {{pagination}}
+
+{{!-- Tag list --}}
+<div class="post">
+  <h4>Tags</h4>
+  {{#get "tags" limit="all"}}
+      {{#foreach tags}}
+          <a href="{{url}}"><span class="tag">{{name}}</span></a>
+      {{/foreach}}
+  {{/get}}
+</div>
