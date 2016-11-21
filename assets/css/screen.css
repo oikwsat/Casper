@@ -1796,6 +1796,10 @@ body.page-template .post-title {
         font-size: 0.95em
     }
 
+    .tag {
+        font-size: 1.2rem;
+    }
+
     body:not(.post-template) .post-title {
         font-size: 3.2rem;
     }
